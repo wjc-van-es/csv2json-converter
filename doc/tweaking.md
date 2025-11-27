@@ -38,7 +38,20 @@ h1,h2,h3,h4,h5 {
 
 # Tweaking
 
+## OpenCSV library
+- [https://www.baeldung.com/opencsv](https://www.baeldung.com/opencsv)
+- [https://javadoc.io/doc/com.opencsv/opencsv/latest/index.html](https://javadoc.io/doc/com.opencsv/opencsv/latest/index.html)
+- [https://opencsv.sourceforge.net/#quick_start](https://opencsv.sourceforge.net/#quick_start)
+- [https://stackoverflow.com/questions/9524191/converting-an-csv-file-to-a-json-object-in-java](https://stackoverflow.com/questions/9524191/converting-an-csv-file-to-a-json-object-in-java)
+- [https://mvnrepository.com/artifact/com.opencsv/opencsv/5.12.0](https://mvnrepository.com/artifact/com.opencsv/opencsv/5.12.0)
+- [https://sourceforge.net/p/opencsv/source/ci/master/tree/](https://sourceforge.net/p/opencsv/source/ci/master/tree/)
+- [https://www.geeksforgeeks.org/java/reading-csv-file-java-using-opencsv/](https://www.geeksforgeeks.org/java/reading-csv-file-java-using-opencsv/)
+
 ## Issues
 - we would like to use a Lazy `Stream<String[]>` instead of the `List<String[]>`
   see [https://www.perplexity.ai/search/can-i-use-opencsv-to-read-all-5NTXgkIyTv.gL.4cFcEM7w#0](https://www.perplexity.ai/search/can-i-use-opencsv-to-read-all-5NTXgkIyTv.gL.4cFcEM7w#0)
-- 
+
+## Other sources
+- [https://examples.javacodegeeks.com/convert-csv-to-json-using-java/](https://examples.javacodegeeks.com/convert-csv-to-json-using-java/)
+- [https://medium.com/@AlexanderObregon/javas-bufferedreader-readline-method-explained-66b76877a7e4](https://medium.com/@AlexanderObregon/javas-bufferedreader-readline-method-explained-66b76877a7e4)
+- [https://stackoverflow.com/questions/49456017/map-first-element-of-stream-differently-than-rest](https://stackoverflow.com/questions/49456017/map-first-element-of-stream-differently-than-rest)
