@@ -48,8 +48,28 @@ h1,h2,h3,h4,h5 {
 - [https://www.geeksforgeeks.org/java/reading-csv-file-java-using-opencsv/](https://www.geeksforgeeks.org/java/reading-csv-file-java-using-opencsv/)
 
 ## Issues
+
+### Applying a Stream instead of loading a List in memory
 - we would like to use a Lazy `Stream<String[]>` instead of the `List<String[]>`
   see [https://www.perplexity.ai/search/can-i-use-opencsv-to-read-all-5NTXgkIyTv.gL.4cFcEM7w#0](https://www.perplexity.ai/search/can-i-use-opencsv-to-read-all-5NTXgkIyTv.gL.4cFcEM7w#0)
+
+### Configuring for casual use of double quotes to escape the use of the separator character within a field
+- [https://www.perplexity.ai/search/i-read-a-csv-with-opencsv-in-j-aTFImm3hQkC05fhJSCDmHQ#0](https://www.perplexity.ai/search/i-read-a-csv-with-opencsv-in-j-aTFImm3hQkC05fhJSCDmHQ#0)
+
+### Establishing the csv row count whilst using the iterator and stream instead of in-memory collection
+- We need to know the row count to be able to know when _not_ to add a comma when adding the last element to a json list.
+- The only reliable solution is reading the csv file twice:
+  - once to establish the row count
+  - twice to do the actual conversion to json by supplying the row count value calculated in the first read.
+- This strategy is perfectly acceptable when optimizing for memory use and won't take up much extra time.
+- It is reminiscent to Apache Spark reading a data file twice when no schema is provided: 
+  - once to defer the data schema and 
+  - the second time to fill the appropriate dataframe object with the actual data
+- [https://www.perplexity.ai/search/in-java-writing-from-elements-D.Y8lyorT0SMPHwpea_FKg#0](https://www.perplexity.ai/search/in-java-writing-from-elements-D.Y8lyorT0SMPHwpea_FKg#0)
+
+### Can we use a BufferedWriter with the Spring Boot REST client to produce a rather large json request body
+- It appears this is not possible, and we should use Spring WebClient with Flux<DataBuffer>
+- [https://www.perplexity.ai/search/can-we-use-a-bufferedwriter-wi-PA5S2lBxQge8Ii_wgTWDmA#2](https://www.perplexity.ai/search/can-we-use-a-bufferedwriter-wi-PA5S2lBxQge8Ii_wgTWDmA#2)
 
 ## Other sources
 - [https://examples.javacodegeeks.com/convert-csv-to-json-using-java/](https://examples.javacodegeeks.com/convert-csv-to-json-using-java/)
