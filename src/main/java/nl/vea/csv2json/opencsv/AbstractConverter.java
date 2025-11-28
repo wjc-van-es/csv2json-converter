@@ -21,13 +21,7 @@ public abstract class AbstractConverter implements AutoCloseable {
     protected final Stream<String[]> rows;
     protected final BufferedWriter output;
 
-    /**
-     * Creates a {@link Wrapper} that contains a {@code Stream<String[]>} {@link Wrapper#rows()} and a {@link CSVReader} that feeds it,
-     * based on its arguments
-     * @param input provides the elements for the Stream
-     * @param separator specifies the character used for separating fields
-     * @return the wrapper whose rows Stream can be processed.
-     */
+
     public AbstractConverter(BufferedReader input, BufferedWriter output, char separator) {
         this.output = output;
         CSVParser parser = new CSVParserBuilder()

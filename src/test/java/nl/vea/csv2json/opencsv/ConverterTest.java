@@ -45,7 +45,7 @@ public class ConverterTest {
     }
 
     @Test
-    void testSetupAllLines() throws URISyntaxException, IOException, CsvException {
+    void testSetupAllLines() throws IOException, CsvException {
         try (BufferedReader bf = Files.newBufferedReader(TEST_CSV)) {
             List<String[]> result = readAllLines(bf, ',');
             assertNotNull(result);
@@ -58,7 +58,7 @@ public class ConverterTest {
 
 
     @Test
-    void testSetup() throws IOException, CsvException {
+    void testSetup() throws IOException {
         try (BufferedReader bf = Files.newBufferedReader(TEST_CSV)) {
             Wrapper result = setup(bf, ',');
             assertNotNull(result);

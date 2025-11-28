@@ -28,7 +28,7 @@ public class Converter {
             {
                 "title" : "periodic table of elements",
                 "elements" : [
-                
+            
             """;
     private static final String SUFFIX = """
                 ]
