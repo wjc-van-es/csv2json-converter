@@ -70,6 +70,10 @@ h1,h2,h3,h4,h5 {
 ### Can we use a BufferedWriter with the Spring Boot REST client to produce a rather large json request body
 - It appears this is not possible, and we should use Spring WebClient with Flux<DataBuffer>
 - [https://www.perplexity.ai/search/can-we-use-a-bufferedwriter-wi-PA5S2lBxQge8Ii_wgTWDmA#2](https://www.perplexity.ai/search/can-we-use-a-bufferedwriter-wi-PA5S2lBxQge8Ii_wgTWDmA#2)
+- Chapter 8 from _Cloud Native Spring in Action_ by Thomas Vitale: Reactive Spring: Resilience and scalability
+
+#### Reactive programming Quarkus vs Spring (Mutiny vs Reactor)
+- [https://github.com/rodrigorodrigues/quarkus-vs-springboot-reactive-rest-api](https://github.com/rodrigorodrigues/quarkus-vs-springboot-reactive-rest-api)
 
 ## Other sources
 - [https://examples.javacodegeeks.com/convert-csv-to-json-using-java/](https://examples.javacodegeeks.com/convert-csv-to-json-using-java/)
