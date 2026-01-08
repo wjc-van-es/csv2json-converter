@@ -127,10 +127,8 @@ public class Converter {
     public static List<String[]> readAllLines(BufferedReader input, char separator) throws IOException, CsvException {
         CSVParser parser = new CSVParserBuilder()
                 .withSeparator(separator)
-                //.withEscapeChar('"')
                 .withQuoteChar('"')
                 .withStrictQuotes(false) // fields will only have quotes to escape the separator
-                //.withIgnoreQuotations(false)
                 .build();
         try (CSVReader csvReader = new CSVReaderBuilder(input)
                 .withSkipLines(0)

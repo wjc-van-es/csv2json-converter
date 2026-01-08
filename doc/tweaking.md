@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5 {
 # Tweaking
 
 ## OpenCSV library
+- [https://opencsv.sourceforge.net/licenses.html](https://opencsv.sourceforge.net/licenses.html)
 - [https://www.baeldung.com/opencsv](https://www.baeldung.com/opencsv)
 - [https://javadoc.io/doc/com.opencsv/opencsv/latest/index.html](https://javadoc.io/doc/com.opencsv/opencsv/latest/index.html)
 - [https://opencsv.sourceforge.net/#quick_start](https://opencsv.sourceforge.net/#quick_start)
