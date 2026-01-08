@@ -21,22 +21,26 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ConverterTest {
 
     static final Path TEST_CSV;
+    static final String OUTPUT_DIR = "output";
     static final Path TEST_OUTPUT;
+
+
 
     static {
         try {
             TEST_CSV = Paths.get(
                     ClassLoader.getSystemResource("Periodic_Table_Of_Elements.csv").toURI()
             );
-            TEST_OUTPUT = Paths.get("out", TEST_CSV.getFileName().toString().split("\\.")[0] + ".json");
-        } catch (URISyntaxException e) {
+            Files.createDirectories(Path.of(OUTPUT_DIR)); // create output directory only if it doesn't exist already
+            TEST_OUTPUT = Paths.get(OUTPUT_DIR, TEST_CSV.getFileName().toString().split("\\.")[0] + ".json");
+        } catch (URISyntaxException| IOException e) {
             throw new RuntimeException(e);
         }
     }
 
     @Test
     void testConvert() throws IOException {
-        // convert is lightweight depending on processing each row as an element in a Stream
+        // convert is lightweight depending on processing each row as a String[] element in a Stream
         // when processing the last row we shouldn't add a comma for the corresponding last element of the json array
         // the only reliable way is to go over the csv twice: once to count its rows and once to actually convert
         // to json with the established row count
@@ -45,7 +49,10 @@ public class ConverterTest {
     }
 
     @Test
-    void testSetupAllLines() throws IOException, CsvException {
+    void testReadAllLines() throws IOException, CsvException {
+
+        // This is simply testing the behavior of OpenCSV library and reading all rows of the TEST_CSV file into memory
+        // i.e. a List<String[]>. Nothing else
         try (BufferedReader bf = Files.newBufferedReader(TEST_CSV)) {
             List<String[]> result = readAllLines(bf, ',');
             assertNotNull(result);
@@ -53,10 +60,16 @@ public class ConverterTest {
             assertEquals(119, result.size());
             assertEquals(28, result.getFirst().length);
             assertEquals(28, result.getLast().length);
+            assertEquals("Gold", result.get(79)[1]);
         }
     }
 
 
+    /**
+     * This just tests the setup method, which creates a Wrapper record from a BufferedReader
+     * that holds a CSVReader and a Stream<String[]> created from it
+     * @throws IOException
+     */
     @Test
     void testSetup() throws IOException {
         try (BufferedReader bf = Files.newBufferedReader(TEST_CSV)) {

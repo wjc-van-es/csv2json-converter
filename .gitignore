@@ -5,7 +5,7 @@
 
 # APPLICATION SPECIFIC
 .cache
-out/
+output/
 logs/
 
 # Node artifact files

@@ -4,6 +4,6 @@ import com.opencsv.CSVReader;
 
 import java.util.stream.Stream;
 
-public record Wrapper(CSVReader csvReader, Stream<String[]> rows) {
+record Wrapper(CSVReader csvReader, Stream<String[]> rows) {
 
 }
