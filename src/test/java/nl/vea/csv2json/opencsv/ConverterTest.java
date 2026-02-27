@@ -18,6 +18,7 @@ import java.util.stream.Stream;
 import static nl.vea.csv2json.opencsv.Converter.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class ConverterTest {
 
     static final Path TEST_CSV;

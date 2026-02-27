@@ -48,6 +48,10 @@ h1,h2,h3,h4,h5 {
 - [https://sourceforge.net/p/opencsv/source/ci/master/tree/](https://sourceforge.net/p/opencsv/source/ci/master/tree/)
 - [https://www.geeksforgeeks.org/java/reading-csv-file-java-using-opencsv/](https://www.geeksforgeeks.org/java/reading-csv-file-java-using-opencsv/)
 
+## OpenAPI service integration
+- MMO question
+  [https://www.perplexity.ai/search/with-openapi-spring-boot-defin-OtV.Qvl7TuG_5UDcvLVJMQ](https://www.perplexity.ai/search/with-openapi-spring-boot-defin-OtV.Qvl7TuG_5UDcvLVJMQ)
+
 ## Issues
 
 ### Applying a Stream instead of loading a List in memory
@@ -75,6 +79,18 @@ h1,h2,h3,h4,h5 {
 
 #### Reactive programming Quarkus vs Spring (Mutiny vs Reactor)
 - [https://github.com/rodrigorodrigues/quarkus-vs-springboot-reactive-rest-api](https://github.com/rodrigorodrigues/quarkus-vs-springboot-reactive-rest-api)
+
+### Benchmarking memory use
+- [https://www.perplexity.ai/search/testing-java-code-for-memory-h-0IGkt_nUSuyevYc_Kq6Yog#0](https://www.perplexity.ai/search/testing-java-code-for-memory-h-0IGkt_nUSuyevYc_Kq6Yog#0)
+- [https://www.baeldung.com/java-microbenchmark-harness](https://www.baeldung.com/java-microbenchmark-harness)
+- [https://nljug.org/foojay/benchmarking-and-profiling-java-with-jmh/](https://nljug.org/foojay/benchmarking-and-profiling-java-with-jmh/)
+
+### Spring Boot RestClient & OpenAPI
+- [https://docs.spring.io/spring-framework/reference/integration/rest-clients.html](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html)
+- [https://www.baeldung.com/spring-rest-openapi-documentation](https://www.baeldung.com/spring-rest-openapi-documentation)
+- [https://medium.com/@nina.trausner/mastering-openapi-a-comprehensive-guide-to-building-and-integrating-openapi-in-your-spring-boot-8613f633b6c0](https://medium.com/@nina.trausner/mastering-openapi-a-comprehensive-guide-to-building-and-integrating-openapi-in-your-spring-boot-8613f633b6c0)
+- [https://www.theserverside.com/video/OpenAPI-Swagger-and-Spring-Boot-REST-APIs](https://www.theserverside.com/video/OpenAPI-Swagger-and-Spring-Boot-REST-APIs)
+- [https://www.youtube.com/watch?v=6kwmW_p_Tig](https://www.youtube.com/watch?v=6kwmW_p_Tig)
 
 ## Other sources
 - [https://examples.javacodegeeks.com/convert-csv-to-json-using-java/](https://examples.javacodegeeks.com/convert-csv-to-json-using-java/)
