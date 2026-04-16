@@ -51,6 +51,9 @@ h1,h2,h3,h4,h5 {
 ## OpenAPI service integration
 - MMO question
   [https://www.perplexity.ai/search/with-openapi-spring-boot-defin-OtV.Qvl7TuG_5UDcvLVJMQ](https://www.perplexity.ai/search/with-openapi-spring-boot-defin-OtV.Qvl7TuG_5UDcvLVJMQ)
+- Zipfile download
+  - [https://www.perplexity.ai/search/with-openapi-api-first-spring-1Q6ffaTpSB2TV2QJXv7WfQ](https://www.perplexity.ai/search/with-openapi-api-first-spring-1Q6ffaTpSB2TV2QJXv7WfQ)
+  - [https://www.perplexity.ai/search/i-need-to-use-an-rest-api-that-cmYkUHWfRTmCf2rhw9Q2jg](https://www.perplexity.ai/search/i-need-to-use-an-rest-api-that-cmYkUHWfRTmCf2rhw9Q2jg)
 
 ## Issues
 
